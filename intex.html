@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Özür Dilerim Abim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg1: #0f172a;
+            --bg2: #1e293b;
+            --accent1: #3b82f6;
+            --accent2: #0ea5e9;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, var(--bg1), var(--bg2));
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        /* Animasyonlu Giriş */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card {
+            width: 100%;
+            max-width: 550px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 1.5s ease-out; /* Fade-in efekti */
+        }
+
+        .title {
+            font-size: 32px;
+            color: var(--accent1);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.8;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            padding: 14px 30px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent1), var(--accent2));
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(14, 165, 233, 0.5);
+        }
+
+        /* Müzik çalar kutusu (gizli kalabilir veya küçük görünebilir) */
+        .audio-info {
+            position: fixed;
+            bottom: 20px;
+            font-size: 10px;
+            opacity: 0.3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/O7Is6G7A_i4?autoplay=1&loop=1&playlist=O7Is6G7A_i4" frameborder="0" allow="autoplay"></iframe>
+
+    <div class="card">
+        <h1 class="title">Canım Abim...</h1>
+        <p class="text">
+            Seni kırdığım her an için kalbim çok buruk.<br>
+            Aramızdaki bağ benim için her şeyden daha değerli.<br>
+            Seni gerçekten çok seviyorum ve özür dilerim. 💙
+        </p>
+        <button class="button" onclick="affedildi()">Beni Affet 🤍</button>
+    </div>
+
+    <script>
+        function affedildi() {
+            alert("Harikasın abim! Bu dünyadaki en iyi abisin. Seni çok seviyorum! ❤️");
+        }
+    </script>
+
+</body>
+</html>
