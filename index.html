@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Özür Dilerim Abim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg1: #0f172a;
+            --bg2: #1e293b;
+            --accent1: #3b82f6;
+            --accent2: #0ea5e9;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, var(--bg1), var(--bg2));
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 550px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .title {
+            font-size: 28px;
+            color: var(--accent1);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--accent1), var(--accent2));
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s, opacity 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 class="title">Abim...</h1>
+        <p class="text">
+            Çok özür dilerim. <br>
+            Seni kırdıysam gerçekten üzgünüm. <br>
+            Sana çok değer veriyorum. <br>
+            Seni seviyorum 💙
+        </p>
+        <button class="button" onclick="affedildi()">Beni Affet 🤍</button>
+    </div>
+
+    <script>
+        function affedildi() {
+            alert("Harikasın abim! Seni çok seviyorum, teşekkür ederim. ❤️");
+        }
+    </script>
+
+</body>
+</html>
